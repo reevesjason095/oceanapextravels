@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Apex Travels</title>
+    
+    <!-- Real Favicon -->
+    <link rel="icon" type="image/svg+xml" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/svgs/solid/anchor.svg">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fa-solid fa-anchor"></i> Ocean Apex Travels
+        </div>
+        <ul class="nav-links">
+            <li><a href="#countdown-anchor">Countdown</a></li>
+            <li><a href="#gallery-anchor">Gallery</a></li>
+            <li><a href="#video-anchor">Videos</a></li>
+            <li><a href="#booking-anchor">Book Now</a></li>
+            <li><a href="#quote-anchor">Request Quote</a></li>
+            <li><a href="#partner-anchor">Our Partner</a></li>
+            <li>
+                <a href="https://www.youtube.com/@oceanapex" target="_blank" rel="noopener noreferrer" class="youtube-link">
+                    <i class="fa-brands fa-youtube"></i> YouTube
+                </a>
+            </li>
+        </ul>
+    </nav>
+     
+    <div class="notification-banner">
+        🚨 <strong>New:</strong> You can now book your next cruise directly on our website using our online booking engine.
+    </div>
+
+    <header class="site-header">
+        <hr class="main">
+        <h1 class="title">
+            <i class="fa-solid fa-anchor logo-icon"></i> Ocean Apex Travels
+        </h1>
+        <hr class="main">
+        <p class="subtitle">Your Premier Gateway to the Deep Blue</p>
+        <p>Welcome to our site!!</p>
+    </header>
+
+    <img src="https://plus.unsplash.com/premium_photo-1661900817397-400624fd4858?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3J1aXNlJTIwc2hpcHxlbnwwfHwwfHx8MA%3D%3D" alt="Ocean Apex Travels Cruise Ship" width="100%">
+
+    <div class="countdown-card" id="countdown-anchor">
+        <h2 class="cruise-heading">Caribbean Princess Countdown</h2>
+        <div id="timer" class="timer-display">Loading...</div>
+        <p class="timer-subtext">until boarding at 11:00 AM!!!</p>
+    </div>
+
+    <section class="gallery-section" id="gallery-anchor">
+        <div class="section-label">Photo Gallery</div>
+        <h2 class="gallery-title">Our Favorite Cruise Memories</h2>
+        <p class="gallery-subtitle">Take a look at some of our favorite cruise memories.</p>
+        
+        <div class="media-grid">
+            <div class="media-card">
+                <img src="https://plus.unsplash.com/premium_photo-1669750817438-3f7f3112de8d?w=500&auto=format&fit=crop&q=60" alt="Beautiful Beach Destination">
+                <div class="media-caption">Exploring St. Thomas Beaches</div>
+            </div>
+
+            <div class="media-card">
+                <img src="https://plus.unsplash.com/premium_photo-1731595022278-1df824cfe6c8?w=500&auto=format&fit=crop&q=60" alt="Sunset Deck View">
+                <div class="media-caption">Sunset from the Upper Deck</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section" id="video-anchor">
+        <div class="section-label">Video Gallery</div>
+        <h2 class="gallery-title">Cruise Stories in Motion</h2>
+        <p class="gallery-subtitle">Watch highlights from our cruise adventures and past sailings.</p>
+
+        <div class="media-grid">
+            <div class="media-card video-card">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Js-sc8ZRIGE" title="Carnival Ecstasy Cruise Vlog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="media-caption">🎬 Throwback Sailing: Carnival Ecstasy 2018 Cruise Memories</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-section" id="booking-anchor">
+        <div class="booking-header">
+            <span class="booking-badge"><i class="fa-solid fa-shield-heart"></i> Secure Online Booking</span>
+            <h2 class="booking-title">Browse Cruises and Book Online</h2>
+            <p class="booking-subtitle">Feel free to explore sailings with our booking engine. If you’d like a more personal touch, reach out and we’ll be happy to help.</p>
+            <p class="booking-disclaimer">Note: Cruise search and booking results may take you to the secure Cruise Brothers website.</p>
+        </div>
+
+        <div class="booking">
+            <iframe  width="100%" height="500" src="https://oceanapextravels.cruisebrothers.com/cb/booking_engine_iframe/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="partner-section" id="partner-anchor">
+        <div class="partner-card">
+            <h2 class="partner-title">Trusted Travel Partner</h2>
+            <p class="partner-text">
+                Ocean Apex Travels is proud to work with <strong>Cruise Brothers</strong>, a trusted name in cruise planning and booking support.
+            </p>
+        </div>
+    </section>
+
+    <section class="booking-inquiry-section" id="quote-anchor">
+        <h2 class="form-title">Need a More Personal Touch?</h2>
+        <p class="form-subtitle">If you’d like help choosing the right cruise, send us a message and we’ll get back to you.</p>
+
+        <form action="https://formsubmit.co/oceanapextravels@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Travel Inquiry!">
+            <input type="hidden" name="_next" value="thankyou.html">
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="na@na.com">
+
+            <label for="visitor-message">Your Message:</label>
+            <textarea id="visitor-message" name="message" required placeholder="Tell us what kind of cruise you're looking for..."></textarea>
+
+            <button type="submit">Send Email</button>
+        </form>
+    </section>
+
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
+        Back to top <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <hr class="main">
+    
+    <footer>
+        <p>© 2026 Ocean Apex Travels<br>
+        Jason Reeves | Dallas, NC 28034</p>
+        <p id="currentTime" class="end"></p>
+    </footer>
+     
+    <hr class="main">
+
+    <script src="script.js"></script>
+</body>
+</html>
