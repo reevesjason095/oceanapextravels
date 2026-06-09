@@ -1,0 +1,420 @@
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(180deg, #e6fbff 0%, #f7fbfd 100%);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.main {
+    background-color: aquamarine;
+    height: 5px;
+}
+
+img {
+    max-width: 500px;
+    max-height: 500px;
+    width: 300px;
+    height: 250px;
+    border: 5px solid #fdec06;
+    border-radius: 8px;
+    padding: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2aa2b9;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links a,
+.youtube-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.youtube-link i {
+    color: #ff0000;
+    margin-right: 6px;
+}
+
+.site-header {
+    margin-top: 40px !important;
+    text-align: center;
+}
+
+.title {
+    display: inline-block;
+    background-color: aqua;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    padding: 25px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    outline: none;
+    width: 250px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.section-label {
+    display: inline-block;
+    background: #0a9396;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    margin-bottom: 10px;
+}
+
+.time {
+    color: rgb(76, 156, 32);
+}
+
+.cruise {
+    color: cyan;
+}
+
+.gallery-section,
+.video-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-title {
+    color: #005f73;
+    margin-bottom: 5px;
+}
+
+.gallery-subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.media-caption {
+    padding: 12px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #223343;
+    background: #ffffff;
+}
+
+.notification-banner {
+    background-color: #e63946;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 10px rgba(230, 57, 70, 0.2);
+    animation: fadeInDown 0.5s ease-out;
+}
+
+.countdown-card {
+    background: linear-gradient(135deg, #005f73 0%, #0a9396 100%);
+    color: #ffffff;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 95, 115, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cruise-heading {
+    font-size: 1.3rem;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.timer-display {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.2rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px 10px;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    color: #94d2bd;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.timer-subtext {
+    font-size: 0.85rem;
+    margin: 12px 0 0 0;
+    opacity: 0.75;
+    font-style: italic;
+}
+
+.booking-section {
+    max-width: 1150px;
+    margin: 60px auto 20px;
+    padding: 0 20px;
+}
+
+.booking-header {
+    background: linear-gradient(135deg, #023e8a 0%, #0077b6 50%, #00b4d8 100%);
+    color: white;
+    padding: 22px 28px 18px;
+    border-radius: 22px 22px 0 0;
+    box-shadow: 0 14px 35px rgba(0, 95, 115, 0.14);
+}
+
+.booking-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.16);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.booking-title {
+    color: white;
+    margin: 0 0 6px 0;
+    font-size: 2rem;
+}
+
+.booking-subtitle {
+    color: rgba(255, 255, 255, 0.92);
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.booking-disclaimer {
+    margin: 12px auto 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.95);
+    font-style: italic;
+    line-height: 1.5;
+    max-width: 850px;
+}
+
+.booking {
+    background: linear-gradient(180deg, #ffffff 0%, #f2fbff 100%);
+    border-radius: 0 0 22px 22px;
+    overflow: hidden;
+    box-shadow: 0 14px 35px rgba(0, 95, 115, 0.14);
+    border: 1px solid rgba(0, 95, 115, 0.08);
+    border-top: 0;
+    padding: 8px;
+}
+
+.booking iframe {
+    display: block;
+    width: 100%;
+    height: 420px;
+    min-height: 420px;
+    max-height: 420px;
+    border: 0;
+    border-radius: 16px;
+    background: #fff;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.partner-section {
+    max-width: 900px;
+    margin: 15px auto 10px;
+    padding: 0 20px;
+}
+
+.partner-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 22px rgba(0, 95, 115, 0.08);
+    border: 1px solid rgba(0, 95, 115, 0.08);
+}
+
+.partner-title {
+    color: #005f73;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.partner-text {
+    color: #4e5b63;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.booking-inquiry-section {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 20px auto 40px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 95, 115, 0.08);
+    text-align: left;
+}
+
+.form-title {
+    color: #005f73;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.form-subtitle {
+    color: #666;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: #223343;
+    color: #a3b8cc;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-icon {
+    color: #0a9396;
+    margin-right: 12px;
+    font-size: 2.8rem;
+    vertical-align: middle;
+    display: inline-block;
+    animation: gentle-float 3s ease-in-out infinite;
+}
+
+#backToTopBtn {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    z-index: 99999 !important;
+    display: flex;
+    background-color: #0a9396 !important;
+    color: white !important;
+    border: none !important;
+    outline: none !important;
+    cursor: pointer !important;
+    padding: 12px 20px !important;
+    border-radius: 30px !important;
+    font-size: 0.9rem !important;
+    font-weight: bold !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+    width: auto !important;
+    height: auto !important;
+    float: none !important;
+    clear: both !important;
+    margin: 0 !important;
+    gap: 8px !important;
+    align-items: center;
+    justify-content: center;
+}
+
+#backToTopBtn:hover {
+    background-color: #005f73 !important;
+    transform: translateY(-2px) !important;
+}
+
+@keyframes gentle-float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-4px) rotate(3deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ 
+/* ==========================================
+   PASTE THIS AT THE VERY BOTTOM OF YOUR FILE 
+   ========================================== */
+
+/* Universal fix to ensure margins and paddings stay inside screen boundaries */
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive updates for tablets and mobile devices */
+@media screen and (max-width: 768px) {
+  /* 1. Navbar stacking adjustments */
+  .navbar {
+    position: absolute;
+    flex-direction: column;    
+    gap: 12px;                 
+    padding: 15px;        
+    text-align: center;        
+  }
+
+  /* 2. Forces navbar menu links to stack vertically or wrap instead of spilling out */
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  /* 3. Increases the top padding of the body so the stacked navbar doesn't cover your text */
+  body {
+    padding-top: 20px; 
+  }
+
+  /* 4. Fixes the image scaling so photos shrink seamlessly on phone layouts */
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* 5. Makes forms scale down to fit small phone widths */
+  .booking-inquiry-section, 
+  .countdown-card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 15px;
+  }
+}
