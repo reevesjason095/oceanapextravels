@@ -42,6 +42,8 @@ function updateLocalClock() {
 }
 
 const topButton = document.getElementById("backToTopBtn");
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
 
 function toggleTopButton() {
     if (!topButton) return;
@@ -50,6 +52,28 @@ function toggleTopButton() {
     } else {
         topButton.style.setProperty("display", "none", "important");
     }
+}
+
+function toggleMenu() {
+    if (!menuToggle || !navLinks) return;
+    navLinks.classList.toggle("show");
+    const expanded = navLinks.classList.contains("show");
+    menuToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+    menuToggle.innerHTML = expanded
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+}
+
+if (menuToggle) {
+    menuToggle.addEventListener("click", toggleMenu);
+}
+
+if (navLinks) {
+    navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            if (window.innerWidth <= 768) toggleMenu();
+        });
+    });
 }
 
 window.addEventListener("scroll", toggleTopButton);
@@ -63,6 +87,10 @@ function scrollToTop() {
 }
 
 updateCountdown();
+updateLocalClock();
+
+setInterval(updateCountdown, 1000);
+setInterval(updateLocalClock, 1000);
 updateLocalClock();
 
 setInterval(updateCountdown, 1000);
