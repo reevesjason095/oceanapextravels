@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - Ocean Apex Travels</title>
+    <link rel="icon" type="image/svg+xml" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/svgs/solid/anchor.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fa-solid fa-anchor"></i> Ocean Apex Travels
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="index.html#quote-anchor">Request Quote</a></li>
+            <li>
+                <a href="https://www.youtube.com/@oceanapex" target="_blank" rel="noopener noreferrer" class="youtube-link">
+                    <i class="fa-brands fa-youtube"></i> YouTube
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="notification-banner">
+        🚨 <strong>Secure:</strong> Browse cruises and book online here.
+    </div>
+
+    <header class="site-header">
+        <hr class="main">
+        <h1 class="title">
+            <i class="fa-solid fa-anchor logo-icon"></i> Book Your Cruise
+        </h1>
+        <hr class="main">
+        <p class="subtitle">Find sailings and reserve your next getaway</p>
+    </header>
+
+    <section class="booking-section booking-page-section">
+        <div class="booking-header">
+            <span class="booking-badge"><i class="fa-solid fa-shield-heart"></i> Secure Online Booking</span>
+            <h2 class="booking-title">Browse Cruises and Book Online</h2>
+            <p class="booking-subtitle">Explore sailings with our booking engine below.</p>
+            <p class="booking-disclaimer">Note: Cruise search and booking results may take you to the secure Cruise Brothers website.</p>
+        </div>
+
+        <div class="booking">
+            <iframe width="100%" height="500" src="https://oceanapextravels.cruisebrothers.com/cb/booking_engine_iframe/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
