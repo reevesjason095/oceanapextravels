@@ -39,6 +39,23 @@ img {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.nav-brand {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 0;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -370,50 +387,105 @@ footer {
     }
 }
  
-/* ==========================================
-   PASTE THIS AT THE VERY BOTTOM OF YOUR FILE 
-   ========================================== */
-
-/* Universal fix to ensure margins and paddings stay inside screen boundaries */
 * {
   box-sizing: border-box;
 }
 
-/* Responsive updates for tablets and mobile devices */
+.about-section {
+    max-width: 900px;
+    margin: 30px auto 0;
+    padding: 0 20px;
+}
+
+.about-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 22px rgba(0, 95, 115, 0.08);
+    border: 1px solid rgba(0, 95, 115, 0.08);
+    text-align: left;
+}
+
+.about-card h2 {
+    color: #005f73;
+    margin-top: 0;
+}
+
+.about-card p {
+    color: #4e5b63;
+    line-height: 1.7;
+}
+
+.about-home-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #0a9396;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
-  /* 1. Navbar stacking adjustments */
   .navbar {
-    position: absolute;
-    flex-direction: column;    
-    gap: 12px;                 
-    padding: 15px;        
-    text-align: center;        
+    flex-wrap: nowrap;
+    gap: 12px;
+    padding: 15px;
   }
 
-  /* 2. Forces navbar menu links to stack vertically or wrap instead of spilling out */
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    position: relative;
+    z-index: 1101;
+  }
+
   .nav-links {
+    display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 100%;
+    width: 75%;
+    max-width: 320px;
+    height: 100vh;
+    padding: 80px 20px 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #2aa2b9;
+    box-shadow: -8px 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1100;
+    align-items: flex-start;
   }
 
-  /* 3. Increases the top padding of the body so the stacked navbar doesn't cover your text */
+  .nav-links.show {
+    transform: translateX(0);
+  }
+
   body {
-    padding-top: 20px; 
+    padding-top: 20px;
   }
 
-  /* 4. Fixes the image scaling so photos shrink seamlessly on phone layouts */
   img {
     width: 100%;
     max-width: 100%;
     height: auto;
   }
 
-  /* 5. Makes forms scale down to fit small phone widths */
   .booking-inquiry-section, 
   .countdown-card {
     width: 90%;
     margin-left: auto;
+    margin-right: auto;
+    padding: 20px 15px;
+  }
+
+  .booking-page-section {
+    margin-top: 30px;
+  }
+}
     margin-right: auto;
     padding: 20px 15px;
   }
