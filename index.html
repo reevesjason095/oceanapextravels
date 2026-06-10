@@ -10,20 +10,27 @@
     
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-     <link rel="stylesheet" href="styles.css" />
+    
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-brand">
             <i class="fa-solid fa-anchor"></i> Ocean Apex Travels
         </div>
-        <ul class="nav-links">
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
             <li><a href="#countdown-anchor">Countdown</a></li>
             <li><a href="#gallery-anchor">Gallery</a></li>
             <li><a href="#video-anchor">Videos</a></li>
-            <li><a href="#booking-anchor">Book Now</a></li>
+            <li><a href="booking.html">Book Now</a></li>
             <li><a href="#quote-anchor">Request Quote</a></li>
             <li><a href="#partner-anchor">Our Partner</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li>
                 <a href="https://www.youtube.com/@oceanapex" target="_blank" rel="noopener noreferrer" class="youtube-link">
                     <i class="fa-brands fa-youtube"></i> YouTube
@@ -85,19 +92,6 @@
         </div>
     </section>
 
-    <section class="booking-section" id="booking-anchor">
-        <div class="booking-header">
-            <span class="booking-badge"><i class="fa-solid fa-shield-heart"></i> Secure Online Booking</span>
-            <h2 class="booking-title">Browse Cruises and Book Online</h2>
-            <p class="booking-subtitle">Feel free to explore sailings with our booking engine. If you’d like a more personal touch, reach out and we’ll be happy to help.</p>
-            <p class="booking-disclaimer">Note: Cruise search and booking results may take you to the secure Cruise Brothers website.</p>
-        </div>
-
-        <div class="booking">
-            <iframe  width="100%" height="500" src="https://oceanapextravels.cruisebrothers.com/cb/booking_engine_iframe/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
-
     <section class="partner-section" id="partner-anchor">
         <div class="partner-card">
             <h2 class="partner-title">Trusted Travel Partner</h2>
@@ -142,6 +136,6 @@
      
     <hr class="main">
 
-    <script src="java/script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
