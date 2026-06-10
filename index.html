@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Apex Travels</title>
     
-    <!-- Real Favicon -->
     <link rel="icon" type="image/svg+xml" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/svgs/solid/anchor.svg">
-    
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-brand">
-            <i class="fa-solid fa-anchor"></i> Ocean Apex Travels
+            <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" role="img">
+                <defs>
+                    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#023e8a"/>
+                        <stop offset="55%" stop-color="#00b4d8"/>
+                        <stop offset="100%" stop-color="#90e0ef"/>
+                    </linearGradient>
+                </defs>
+                <circle cx="32" cy="32" r="31" fill="url(#oceanGrad)"></circle>
+                <path d="M14 39 C20 35, 27 35, 33 39 C39 43, 46 43, 50 40" fill="none" stroke="#e0fbff" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M17 29 L28 17 L35 25 L40 20 L50 31" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M18 45 C24 41, 30 41, 36 45 C41 48, 46 48, 49 46" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.9"></path>
+            </svg>
+            Ocean Apex Travels
         </div>
 
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -46,7 +55,20 @@
     <header class="site-header">
         <hr class="main">
         <h1 class="title">
-            <i class="fa-solid fa-anchor logo-icon"></i> Ocean Apex Travels
+            <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" role="img">
+                <defs>
+                    <linearGradient id="oceanGradTitle" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#023e8a"/>
+                        <stop offset="55%" stop-color="#00b4d8"/>
+                        <stop offset="100%" stop-color="#90e0ef"/>
+                    </linearGradient>
+                </defs>
+                <circle cx="32" cy="32" r="31" fill="url(#oceanGradTitle)"></circle>
+                <path d="M14 39 C20 35, 27 35, 33 39 C39 43, 46 43, 50 40" fill="none" stroke="#e0fbff" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M17 29 L28 17 L35 25 L40 20 L50 31" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M18 45 C24 41, 30 41, 36 45 C41 48, 46 48, 49 46" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.9"></path>
+            </svg>
+            Ocean Apex Travels
         </h1>
         <hr class="main">
         <p class="subtitle">Your Premier Gateway to the Deep Blue</p>
@@ -58,7 +80,7 @@
     <div class="countdown-card" id="countdown-anchor">
         <h2 class="cruise-heading">Caribbean Princess Countdown</h2>
         <div id="timer" class="timer-display">Loading...</div>
-        <p class="timer-subtext">August 23 2026 Sail Away at 3:30pm</p>
+        <p class="timer-subtext">until boarding at 11:00 AM!!!</p>
     </div>
 
     <section class="gallery-section" id="gallery-anchor">
