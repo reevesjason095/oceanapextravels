@@ -44,7 +44,15 @@ img {
     font-weight: bold;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+    line-height: 1;
+}
+
+.site-logo {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    display: block;
 }
 
 .menu-toggle {
@@ -83,7 +91,9 @@ img {
 }
 
 .title {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
     background-color: aqua;
     border-color: #007BFF;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
@@ -95,6 +105,7 @@ img {
     width: 250px;
     box-sizing: border-box;
     text-align: center;
+    justify-content: center;
 }
 
 .section-label {
@@ -377,16 +388,10 @@ footer {
 }
 
 @keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
- 
+
 * {
   box-sizing: border-box;
 }
@@ -480,10 +485,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding: 20px 15px;
-  }
-
-  .booking-page-section {
-    margin-top: 30px;
   }
 }
     margin-right: auto;
