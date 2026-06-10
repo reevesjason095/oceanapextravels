@@ -330,7 +330,7 @@ img {
 }
 
 footer {
-    background-color: #4095d6;
+    background-color: #223343;
     color: #a3b8cc;
     text-align: center;
     padding: 25px 10px;
@@ -490,4 +490,5 @@ footer {
     margin-right: auto;
     padding: 20px 15px;
   }
+}
 }
