@@ -9,7 +9,7 @@ function updateCountdown() {
     const difference = cruiseDate - now;
 
     if (difference <= 0) {
-        timerElement.innerHTML = "Bon Voyage! Boarding Has Begun!";
+        timerElement.innerHTML = "Welcome aboard, happy sailing!";
         return;
     }
 
@@ -87,10 +87,6 @@ function scrollToTop() {
 }
 
 updateCountdown();
-updateLocalClock();
-
-setInterval(updateCountdown, 1000);
-setInterval(updateLocalClock, 1000);
 updateLocalClock();
 
 setInterval(updateCountdown, 1000);
