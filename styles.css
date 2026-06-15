@@ -20,11 +20,17 @@ img {
     max-height: 500px;
     width: 300px;
     height: 250px;
-    border: 5px solid #fdec06;
+    border: 5px solid #5563755b;
     border-radius: 8px;
     padding: 0px;
 }
 
+.img1 {
+    width: 50%;
+    height: 200px;
+    border: 5px solid;
+    border-color:  #00b4d8;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -46,6 +52,18 @@ img {
     align-items: center;
     gap: 10px;
     line-height: 1;
+}
+
+.nav-brand h1 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.nav-brand h6 {
+    margin: 0;
+    font-size: 0.78rem;
+    font-weight: normal;
+    opacity: 0.95;
 }
 
 .site-logo {
@@ -106,6 +124,12 @@ img {
     box-sizing: border-box;
     text-align: center;
     justify-content: center;
+}
+
+.subtitle {
+    margin: 10px 0 0;
+    color: #005f73;
+    font-weight: bold;
 }
 
 .section-label {
@@ -180,7 +204,7 @@ img {
     border-radius: 16px;
     text-align: center;
     box-shadow: 0 10px 25px rgba(0, 95, 115, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 4px solid rgb(5, 0, 0);
 }
 
 .cruise-heading {
@@ -486,9 +510,4 @@ footer {
     margin-right: auto;
     padding: 20px 15px;
   }
-}
-    margin-right: auto;
-    padding: 20px 15px;
-  }
-}
 }
