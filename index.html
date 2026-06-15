@@ -143,20 +143,42 @@
         <p class="form-subtitle">If you’d like help choosing the right cruise, send us a message and we’ll get back to you.</p>
 
         <form action="https://formsubmit.co/oceanapextravels@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="New Travel Inquiry!">
-            <input type="hidden" name="_next" value="https://oceanapextravels.onecompiler.app/thankyou.html">
-            <input type="hidden" name="_captcha" value="false">
-            
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required placeholder="John Doe">
+             <!-- Netlify requires a unique name attribute on every single input field -->
+<fieldset>
+<legend>Contact Information</legend>
+<label for="full-name">Full Name:</label>
+<input type="text" id="full-name" name="client-name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="na@na.com">
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="client-email" required>
 
-            <label for="visitor-message">Your Message:</label>
-            <textarea id="visitor-message" name="message" required placeholder="Tell us what kind of cruise you're looking for..."></textarea>
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="client-phone" required>
+</fieldset>
 
-            <button type="submit">Send Email</button>
+<fieldset>
+<legend>Trip Details</legend>
+<label for="destination">Where do you want to go?</label>
+<input type="text" id="destination" name="trip-destination" required>
+
+<label for="travel-date">Preferred Departure Date:</label>
+<input type="date" id="travel-date" name="departure-date">
+
+<label for="travelers">Number of Travelers:</label>
+<input type="number" id="travelers" name="number-of-travelers" min="1" value="1">
+
+<label for="budget">Estimated Budget per Person:</label>
+<input type="text" id="budget" name="estimated-budget" placeholder="e.g., $2,000">
+</fieldset>
+
+<fieldset>
+<legend>Additional Requests</legend>
+<label for="notes">Tell us more about your dream trip (preferred airlines, bed configurations, etc.):</label>
+<textarea id="notes" name="trip-notes" rows="4"></textarea>
+</fieldset>
+
+<!-- Always include a submit button inside the form tag -->
+<button type="submit">Request My Custom Quote</button>
         </form>
     </section>
 
