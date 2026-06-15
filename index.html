@@ -142,8 +142,12 @@
         <h2 class="form-title">Need a More Personal Touch?</h2>
         <p class="form-subtitle">If you’d like help choosing the right cruise, send us a message and we’ll get back to you.</p>
 
-        <form action="https://formsubmit.co/oceanapextravels@gmail.com" method="POST">
-             <!-- Netlify requires a unique name attribute on every single input field -->
+       <form name="travel-quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+  
+  <!-- Hidden honeypot field to block automated spam bots -->
+  <p style="display: none;">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
 <fieldset>
 <legend>Contact Information</legend>
 <label for="full-name">Full Name:</label>
