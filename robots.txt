@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /thankyou.html
+
+Sitemap: https://yourdomain.com
