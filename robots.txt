@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /thankyou.html
-
-Sitemap: https://oceanapextravels.com/
