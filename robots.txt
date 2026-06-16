@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /thankyou.html
 
-Sitemap: https://oceanapextravels.netlify.app/
+Sitemap: https://oceanapextravels.com/
