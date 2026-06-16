@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Apex Travels</title>
-    
     <link rel="icon" type="image/svg+xml" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/svgs/solid/anchor.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css" />
@@ -25,8 +24,8 @@
                 <path d="M17 29 L28 17 L35 25 L40 20 L50 31" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M18 45 C24 41, 30 41, 36 45 C41 48, 46 48, 49 46" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.9"></path>
             </svg>
-            <h1>Ocean Apex Travels</h1> 
-             <p class="tagline">Helping make your Dream Destinations a Reality!!</p>
+            <h1>Ocean Apex Travels</h1>
+            <p class="tagline">Helping make your Dream Destinations a Reality!!</p>
         </div>
 
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -48,15 +47,15 @@
             </li>
         </ul>
     </nav>
-     
-     
+
+    <div class="home-banner-wrap">
+        <div class="notification-banner">
+            🚨 <strong>New:</strong> You can now book your next cruise directly on our website using our online booking engine.
+        </div>
+    </div>
 
     <header class="site-header">
-        <div class="notification-banner">
-        🚨 <strong>New:</strong> You can now book your next cruise directly on our website using our online booking engine.
-    </div>
         <hr class="main">
-         
         <h1 class="title">
             <svg class="site-logo" viewBox="0 0 64 64" aria-hidden="true" role="img">
                 <defs>
@@ -90,7 +89,7 @@
         <div class="section-label">Photo Gallery</div>
         <h2 class="gallery-title">Our Favorite Cruise Memories</h2>
         <p class="gallery-subtitle">Take a look at some of our favorite cruise memories.</p>
-        
+
         <div class="media-grid">
             <div class="media-card">
                 <img src="https://plus.unsplash.com/premium_photo-1733292010795-1311504ce3aa?q=80&w=1168&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Puerto Rico stunning view">
@@ -142,43 +141,46 @@
         <h2 class="form-title">Need a More Personal Touch?</h2>
         <p class="form-subtitle">If you’d like help choosing the right cruise, send us a message and we’ll get back to you.</p>
 
-        <form action="https://formsubmit.co/oceanapextravels@gmail.com" method="POST">
-             <!-- Netlify requires a unique name attribute on every single input field -->
-<fieldset>
-<legend>Contact Information</legend>
-<label for="full-name">Full Name:</label>
-<input type="text" id="full-name" name="client-name" required>
+        <form name="booking-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thankyou.html">
+            <input type="hidden" name="form-name" value="booking-inquiry">
+            <p style="display:none;">
+                <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+            </p>
 
-<label for="email">Email Address:</label>
-<input type="email" id="email" name="client-email" required>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="client-name" required>
 
-<label for="phone">Phone Number:</label>
-<input type="tel" id="phone" name="client-phone" required>
-</fieldset>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="client-email" required>
 
-<fieldset>
-<legend>Trip Details</legend>
-<label for="destination">Where do you want to go?</label>
-<input type="text" id="destination" name="trip-destination" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="client-phone" required>
+            </fieldset>
 
-<label for="travel-date">Preferred Departure Date:</label>
-<input type="date" id="travel-date" name="departure-date">
+            <fieldset>
+                <legend>Trip Details</legend>
+                <label for="destination">Where do you want to go?</label>
+                <input type="text" id="destination" name="trip-destination" required>
 
-<label for="travelers">Number of Travelers:</label>
-<input type="number" id="travelers" name="number-of-travelers" min="1" value="1">
+                <label for="travel-date">Preferred Departure Date:</label>
+                <input type="date" id="travel-date" name="departure-date">
 
-<label for="budget">Estimated Budget per Person:</label>
-<input type="text" id="budget" name="estimated-budget" placeholder="e.g., $2,000">
-</fieldset>
+                <label for="travelers">Number of Travelers:</label>
+                <input type="number" id="travelers" name="number-of-travelers" min="1" value="1">
 
-<fieldset>
-<legend>Additional Requests</legend>
-<label for="notes">Tell us more about your dream trip (preferred airlines, bed configurations, etc.):</label>
-<textarea id="notes" name="trip-notes" rows="4"></textarea>
-</fieldset>
+                <label for="budget">Estimated Budget per Person:</label>
+                <input type="text" id="budget" name="estimated-budget" placeholder="e.g., $2,000">
+            </fieldset>
 
-<!-- Always include a submit button inside the form tag -->
-<button type="submit">Request My Custom Quote</button>
+            <fieldset>
+                <legend>Additional Requests</legend>
+                <label for="notes">Tell us more about your dream trip (preferred airlines, bed configurations, etc.):</label>
+                <textarea id="notes" name="trip-notes" rows="4"></textarea>
+            </fieldset>
+
+            <button type="submit">Request My Custom Quote</button>
         </form>
     </section>
 
@@ -187,14 +189,14 @@
     </button>
 
     <hr class="main">
-    
+
     <footer>
         <p>© 2026 Ocean Apex Travels<br>
         Jason Reeves | Dallas, NC 28034</p>
         <p class="footer-contact">Contact Us: <a href="mailto:oceanapextravels@gmail.com">oceanapextravels@gmail.com</a></p>
         <p id="currentTime" class="end"></p>
     </footer>
-     
+
     <hr class="main">
 
     <script src="script.js"></script>
