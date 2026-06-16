@@ -193,7 +193,25 @@ hr.main {
     box-shadow: 0 8px 24px rgba(0, 95, 115, 0.12);
 }
 
+.gallery-section,
+.video-section,
+.destinations-section {
+    width: min(1100px, 92%);
+    margin: 40px auto;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+    justify-items: center;
+    align-items: start;
+    margin-top: 22px;
+}
+
 .media-card {
+    width: 100%;
+    max-width: 360px;
     border: 2px solid #0a9396;
     border-radius: 16px;
     overflow: hidden;
@@ -208,6 +226,11 @@ hr.main {
 }
 
 .media-card img {
+    height: auto;
+}
+
+.video-card iframe {
+    aspect-ratio: 16 / 9;
     height: auto;
 }
 
