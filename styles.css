@@ -234,6 +234,7 @@ body {
 
 hr.main {
     margin: 12px auto;
+    width: 100%
     width: min(90%, 900px);
     border: 0;
     border-top: 2px solid #b7dbe4;
