@@ -37,16 +37,12 @@
             <li><a href="booking.html">Book Now</a></li>
             <li><a href="index.html#quote-anchor">Request Quote</a></li>
             <li>
-                <a href="https://www.youtube.com/@oceanapex" target="_blank" rel="noopener noreferrer" class="youtube-link">
+                <a href="https://www.youtube.com/@oceanapex" target="_blank" rel="noopener noreferrer nofollow" class="youtube-link" referrerpolicy="no-referrer">
                     <i class="fa-brands fa-youtube"></i> YouTube
                 </a>
             </li>
         </ul>
     </nav>
-
-    <div class="notification-banner">
-        🚨 <strong>Secure:</strong> Browse cruises and book online here.
-    </div>
 
     <header class="site-header">
         <hr class="main">
@@ -72,12 +68,36 @@
 
     <section class="booking-section booking-page-section">
         <div class="booking-header">
-            <span class="booking-badge"><i class="fa-solid fa-shield-heart"></i> Secure Online Booking</span>
-            <h2 class="booking-title">Browse Cruises and Book Online</h2>
-            <p class="booking-subtitle">Explore sailings with our booking engine below.</p>
-            <p class="booking-disclaimer">Note: Cruise search and booking results may take you to the secure Cruise Brothers website.</p>
+            <span class="booking-badge"><i class="fa-solid fa-shield-heart"></i> Partner Booking Engine</span>
+            <h2 class="booking-title">Search and Book Through Outside Agents</h2>
+            <p class="booking-subtitle">
+                Our booking experience is provided through our trusted travel partner, Outside Agents.
+            </p>
+            <p class="booking-disclaimer">
+                You’ll be taken to a secure partner booking engine to browse sailings and complete your reservation.
+            </p>
+
+            <a class="booking-link-btn" href="https://oceanapextravels.cruisebrothers.com/cb/booking_engine_iframe/" target="_blank" rel="noopener noreferrer">
+                Open Booking Engine
+            </a>
         </div>
-            <section class="destination-cards-section">
+
+        <div class="booking">
+           <iframe
+                width="100%"
+                height="200"
+                src="https://oceanapextravels.cruisebrothers.com/cb/booking_engine_iframe/"
+                title="Ocean Apex Travels booking engine"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <section class="destination-cards-section">
         <div class="section-label">Dream Destinations</div>
         <h2 class="gallery-title">Explore Popular Cruise Spots</h2>
         <p class="gallery-subtitle">A few favorites with fun facts, highlights, and things to do.</p>
@@ -111,11 +131,7 @@
             </article>
         </div>
     </section>
-        <div class="booking">
-            <iframe width="100%" height="500" src="https://oceanapextravels.cruisebrothers.com/cb/booking_engine_iframe/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
 
     <script src="script.js"></script>
 </body>
-</html>  
+</html>
