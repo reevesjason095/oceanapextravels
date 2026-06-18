@@ -1,112 +1,29 @@
-.booking-page-section {
-    width: min(1100px, 92%);
-    margin: 30px auto 60px;
-}
-
-.booking-header {
-    background: #ffffff;
-    border: 2px solid #0a9396;
-    border-radius: 18px;
-    padding: 24px 20px;
-    box-shadow: 0 8px 24px rgba(0, 95, 115, 0.08);
-    margin-bottom: 20px;
-}
-
-.booking-badge {
-    display: inline-block;
-    background: #e6f7fb;
-    color: #005f73;
-    border: 1px solid #b7dbe4;
-    border-radius: 999px;
-    padding: 8px 14px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    margin-bottom: 12px;
-}
-
-.booking-title {
-    margin: 10px 0;
-    color: #023e8a;
-}
-
-.booking-subtitle,
-.booking-disclaimer {
-    color: #4e5b63;
-    line-height: 1.6;
-    margin: 8px 0;
-}
-
-.booking-link-btn {
-    display: inline-block;
-    margin-top: 14px;
-    background: #0a9396;
-    color: #ffffff;
+.brand-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: inherit;
     text-decoration: none;
-    padding: 12px 18px;
-    border-radius: 999px;
-    font-weight: bold;
 }
 
-.booking {
-    border: 2px solid #0a9396;
-    border-radius: 18px;
-    overflow: hidden;
-    background: #ffffff;
-    box-shadow: 0 8px 24px rgba(0, 95, 115, 0.08);
+.brand-link h1 {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.1;
 }
 
-.booking iframe {
-    display: block;
-    width: 100%;
-    border: 0;
+.brand-link:hover {
+    opacity: 0.9;
 }
 
-.destination-cards-section {
-    width: min(1100px, 92%);
-    margin: 40px auto 70px;
-    text-align: center;
-}
-
-.destination-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 22px;
-    margin-top: 24px;
-    justify-items: center;
-}
-
-.destination-card {
-    width: 100%;
-    max-width: 340px;
-    background: #ffffff;
-    border: 1px solid #cfe8ee;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 10px 24px rgba(0, 95, 115, 0.08);
-    text-align: left;
-}
-
-.destination-card img {
-    width: 100%;
-    height: 210px;
-    object-fit: cover;
-    display: block;
-}
-
-.destination-card-content {
-    padding: 16px 16px 18px;
-}
-
-.destination-card-content h3 {
-    margin: 0 0 10px;
-    color: #023e8a;
-    font-size: 1.2rem;
-}
-
-.destination-card-content p {
-    margin: 8px 0;
-    color: #4e5b63;
-    line-height: 1.55;
+.footer,
+footer p,
+footer a,
+footer .end,
+footer .footer-contact,
+footer .footer-notice,
+footer .sot-disclosures {
+    color: #332d2d;
 }
 
 body {
@@ -146,26 +63,26 @@ body {
 }
 
 .nav-brand h1 {
-    font-size: 1.35rem;
+    font-size: 1rem;
     margin: 0;
     line-height: 1.1;
 }
 
 .nav-brand .tagline {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     margin: 4px 0 0;
     line-height: 1.2;
 }
 
 .site-logo {
-    width: 38px;
-    height: 38px;
+    width: 34px;
+    height: 34px;
     flex: 0 0 auto;
 }
 
 .title .site-logo {
-    width: 58px;
-    height: 58px;
+    width: 48px;
+    height: 48px;
 }
 
 .nav-links {
@@ -409,12 +326,12 @@ hr.main {
   }
 
   .nav-brand h1 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.1;
   }
 
   .nav-brand .tagline {
-    font-size: 0.62rem;
+    font-size: 0.6rem;
     white-space: normal;
     line-height: 1.15;
   }
