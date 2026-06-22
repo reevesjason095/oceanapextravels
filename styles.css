@@ -422,6 +422,15 @@ hr.main {
     gap: 10px;
     min-width: 0;
   }
+    .footer-logos {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .footer-logo {
+        max-width: 105px;
+        max-height: 60px;
+    }
 
   .nav-brand h1 {
     font-size: 1rem;
